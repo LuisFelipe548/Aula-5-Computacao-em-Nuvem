@@ -119,3 +119,8 @@ web-aula5-779c6f9566-9dm9q   1/1     Running   0          5m20s
 web-aula5-779c6f9566-9q7zs   1/1     Running   0          12s
 web-aula5-779c6f9566-sjss9   1/1     Running   0          11m
 
+
+Codigo Passo:9 
+
+NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+web-service   ClusterIP   10.96.123.456   <none>        80/TCP    10s
