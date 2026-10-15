@@ -9,11 +9,22 @@ controlplane   Ready    control-plane   9d    v1.37.1
 node01         Ready    <none>          9d    v1.37.1
 
 Codigo Passo:3 
+
 kubectl create deployment web-aula5 --image=nginx:alpine
 deployment.apps/web-aula5 created
 root@controlplane:~$ kubectl get deployments
 NAME        READY   UP-TO-DATE   AVAILABLE   AGE
 web-aula5   1/1     1            1           18s
-root@controlplane:~$ kubectl get pods
+
+Codigo Passo:4 
+
+ kubectl get pods
 NAME                         READY   STATUS    RESTARTS   AGE
 web-aula5-779c6f9566-sjss9   1/1     Running   0          2m18s
+root@controlplane:~$ kubectl get pods -o wide
+NAME                         READY   STATUS    RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES
+web-aula5-779c6f9566-sjss9   1/1     Running   0          2m40s   192.168.1.178   node01   <none>           <none>
+
+
+
+
