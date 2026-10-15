@@ -84,5 +84,14 @@ Events:
   Normal  Created    5m    kubelet            spec.containers{nginx}: Container created
   Normal  Started    5m    kubelet            spec.containers{nginx}: Container started
 
+Codigo Passo:6 
+
+ kubectl scale deployment web-aula5 --replicas=3
+deployment.apps/web-aula5 scaled
+root@controlplane:~$ kubectl get pods -o wide
+NAME                         READY   STATUS    RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES
+web-aula5-779c6f9566-64v8h   1/1     Running   0          27s     192.168.1.28    node01   <none>           <none>
+web-aula5-779c6f9566-9dm9q   1/1     Running   0          27s     192.168.1.171   node01   <none>           <none>
+web-aula5-779c6f9566-sjss9   1/1     Running   0          6m42s   192.168.1.178   node01   <none>           <none>
 
 
