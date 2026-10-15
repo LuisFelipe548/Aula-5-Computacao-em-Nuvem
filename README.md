@@ -124,3 +124,13 @@ Codigo Passo:9
 
 NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
 web-service   ClusterIP   10.96.123.456   <none>        80/TCP    10s
+
+Codigo Passo:10 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+...
+</html>
+pod "teste" deleted
