@@ -109,3 +109,13 @@ pod/web-aula5-779c6f9566-9dm9q   1/1     Running   0          112s
 pod/web-aula5-779c6f9566-sjss9   1/1     Running   0          8m7s
 
 
+Codigo Passo:8 
+
+kubectl delete pod $(kubectl get pods -o jsonpath='{.items[0].metadata.name}')
+pod "web-aula5-779c6f9566-64v8h" deleted from default namespace
+root@controlplane:~$ kubectl get pods
+NAME                         READY   STATUS    RESTARTS   AGE
+web-aula5-779c6f9566-9dm9q   1/1     Running   0          5m20s
+web-aula5-779c6f9566-9q7zs   1/1     Running   0          12s
+web-aula5-779c6f9566-sjss9   1/1     Running   0          11m
+
